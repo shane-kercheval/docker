@@ -1,0 +1,17 @@
+click
+helpsk
+flake8
+jupyter-contrib-nbextensions
+lightgbm
+mlflow
+notebook
+numpy
+pandas
+plotly
+plotly-express
+python-dateutil
+PyYAML
+scikit-learn
+scikit-optimize
+xgboost
+xmltodict
