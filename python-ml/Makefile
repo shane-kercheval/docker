@@ -11,15 +11,13 @@ notebook:
 	open 'http://127.0.0.1:8888/?token=d4484563805c48c9b55f75eb8b28b3797c6757ad4871776d'
 
 zsh:
-	docker exec -it data-science-template-bash-1 /bin/zsh
+	docker exec -it python-ml-bash-1 /bin/zsh
 
 ####
 # Project
 ####
 linting:
-	flake8 --max-line-length 110 source/scripts
-	flake8 --max-line-length 110 source/library
-	flake8 --max-line-length 110 source/tests
+	flake8 --max-line-length 110 .
 
 run:
-	python source/scripts/commands.py extract
+	python main.py

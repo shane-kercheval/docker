@@ -2,6 +2,7 @@ click
 helpsk
 flake8
 jupyter-contrib-nbextensions
+lightgbm
 mlflow
 notebook
 numpy
