@@ -12,3 +12,7 @@ zsh:
 
 run:
 	Rscript script.R
+
+tests:
+	R --quiet -e "testthat::test_dir('source/tests')"
+
