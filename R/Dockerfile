@@ -6,5 +6,8 @@ RUN PATH="$PATH:/usr/bin/zsh"
 RUN mkdir /code
 WORKDIR /code
 
-RUN R -e "install.packages('dplyr',dependencies=TRUE, repos='http://cran.rstudio.com/')"
-RUN R -e "install.packages('tidyverse',dependencies=TRUE, repos='http://cran.rstudio.com/')"
+RUN apt update
+RUN apt-get install -y libcurl4-openssl-dev
+
+COPY requirements.R .
+RUN Rscript requirements.R
