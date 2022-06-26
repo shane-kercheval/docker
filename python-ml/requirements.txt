@@ -1,6 +1,6 @@
 click
-helpsk
 flake8
+helpsk
 jupyter-contrib-nbextensions
 lightgbm
 mlflow

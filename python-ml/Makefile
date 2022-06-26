@@ -1,11 +1,19 @@
 ####
 # DOCKER
 ####
-docker_compose:
+build:
+	docker build -t shanekercheval/python:ml .
+
+push:
+	docker push shanekercheval/python:ml
+
+build_push: build push
+
+compose:
 	# docker build -t data-science-template .
 	docker compose -f docker-compose.yml up --build
 
-docker_run: notebook zsh
+run: notebook zsh
 
 notebook:
 	open 'http://127.0.0.1:8888/?token=d4484563805c48c9b55f75eb8b28b3797c6757ad4871776d'
