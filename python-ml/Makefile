@@ -10,12 +10,12 @@ push:
 build_push: build push
 
 compose:
-	# docker build -t data-science-template .
 	docker compose -f docker-compose.yml up --build
 
-run: notebook zsh
+run:
+	docker run -it shanekercheval/python:ml
 
-notebook:
+jupyter:
 	open 'http://127.0.0.1:8888/?token=d4484563805c48c9b55f75eb8b28b3797c6757ad4871776d'
 
 zsh:
@@ -27,5 +27,5 @@ zsh:
 linting:
 	flake8 --max-line-length 110 .
 
-run:
+main:
 	python main.py
