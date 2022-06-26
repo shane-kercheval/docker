@@ -13,5 +13,6 @@ python-dateutil
 PyYAML
 scikit-learn
 scikit-optimize
+seaborn
 xgboost
 xmltodict

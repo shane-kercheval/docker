@@ -19,7 +19,7 @@ jupyter:
 	open 'http://127.0.0.1:8888/?token=d4484563805c48c9b55f75eb8b28b3797c6757ad4871776d'
 
 zsh:
-	docker exec -it python-ml-bash-1 /bin/zsh
+	docker exec -it python-ml-nlp-bash-1 /bin/zsh
 
 ####
 # Project

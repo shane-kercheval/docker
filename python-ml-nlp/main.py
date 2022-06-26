@@ -1,5 +1,5 @@
 import sys
-import lightgbm as lgb
+import fasttext
 
 def main():
     print(sys.version)
