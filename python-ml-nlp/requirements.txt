@@ -1,6 +1,8 @@
 fasttext
+jellyfish
 nltk
 pyLDAvis
 regex
+spacy
 textacy
 wordcloud
