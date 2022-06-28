@@ -4,6 +4,9 @@
 build:
 	docker build -t shanekercheval/python:nlp .
 
+rebuild:
+	docker build --no-cache -t shanekercheval/python:nlp .
+
 push:
 	docker push shanekercheval/python:nlp
 

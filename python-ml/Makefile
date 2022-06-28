@@ -4,6 +4,9 @@
 build:
 	docker build -t shanekercheval/python:ml .
 
+rebuild:
+	docker build --no-cache -t shanekercheval/python:ml .
+
 push:
 	docker push shanekercheval/python:ml
 
