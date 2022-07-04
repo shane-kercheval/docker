@@ -11,7 +11,7 @@ RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/machi
 RUN apt-get update -y && apt-get install zsh -y
 RUN PATH="$PATH:/usr/bin/zsh"
 
-RUN apt install python3.9
+RUN apt-get install python3.9
 COPY requirements.txt .
 RUN python -m pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
