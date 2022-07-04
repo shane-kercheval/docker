@@ -1,5 +1,11 @@
 FROM nvidia/cuda:11.0-base
 
+WORKDIR /code
+ENV PYTHONPATH "${PYTHONPATH}:/code"
+
+RUN apt-get update -y && apt-get install zsh -y
+RUN PATH="$PATH:/usr/bin/zsh"
+
 COPY requirements.txt .
 RUN python -m pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
