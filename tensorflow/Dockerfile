@@ -12,8 +12,9 @@ RUN apt-get update -y && apt-get install zsh -y
 RUN PATH="$PATH:/usr/bin/zsh"
 
 RUN apt-get install -y python3.9
+
 COPY requirements.txt .
-RUN python3 -m pip install --upgrade pip
+RUN python3.9 -m pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 RUN rm requirements.txt
 
