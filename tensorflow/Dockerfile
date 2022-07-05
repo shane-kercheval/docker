@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.0-base
+FROM tensorflow/tensorflow:latest-gpu
 
 WORKDIR /code
 ENV PYTHONPATH "${PYTHONPATH}:/code"

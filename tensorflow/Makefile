@@ -23,3 +23,6 @@ update_nvidia_driver:
 	sudo apt update
 	sudo apt upgrade
 	sudo apt install nvidia-driver-510
+
+test_tensorflow_gpu:
+	python3.9 -c "import tensorflow as tf; from tensorflow import keras; print(tf.__version__); print('Num GPUs Available: ', len(tf.config.list_physical_devices('GPU')))"

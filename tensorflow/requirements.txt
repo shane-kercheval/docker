@@ -14,5 +14,6 @@ PyYAML
 scikit-learn
 scikit-optimize
 seaborn
+tensorflow
 xgboost
 xmltodict
