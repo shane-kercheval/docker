@@ -22,6 +22,7 @@ show_nvidia_driver:
 update_nvidia_driver:
 	sudo apt update
 	sudo apt upgrade
+	# apt search nvidia-driver
 	sudo apt install nvidia-driver-510
 
 test_tensorflow_gpu:
