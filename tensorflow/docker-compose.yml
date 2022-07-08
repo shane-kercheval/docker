@@ -31,7 +31,7 @@ services:
             - driver: nvidia
               count: 1
               capabilities: [gpu]
-    command: tensorboard --logdir=./tensorflow_logs --port=6006 --host localhost
+    command: tensorboard --logdir=./tensorflow_logs --port=6006 --host 0.0.0.0
   bash:
     build: .
     working_dir: /code
