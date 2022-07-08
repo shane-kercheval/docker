@@ -17,6 +17,21 @@ services:
     environment:
       - JUPYTER_TOKEN=d4484563805c48c9b55f75eb8b28b3797c6757ad4871776d
     command: jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root
+  tensorboard:
+    build: .
+    working_dir: /code
+    volumes:
+      - .:/code
+    ports:
+      - "6006:6006"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    command: tensorboard --logdir=./tensorflow_logs --port=6006
   bash:
     build: .
     working_dir: /code

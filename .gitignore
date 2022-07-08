@@ -131,4 +131,4 @@ dmypy.json
 
 # tensorflow
 *.h5
-my_logs/
+tensorflow_logs/
