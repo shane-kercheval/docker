@@ -28,7 +28,7 @@ zsh:
 # Project
 ####
 linting:
-	flake8 --max-line-length 110 .
+	flake8 --max-line-length 99 .
 
 main:
 	python main.py
